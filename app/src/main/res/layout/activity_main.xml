@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignTop="@id/height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="320dp"
+        android:ems="10"
+        android:hint="Weight goes here"
+        android:inputType="text|textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="241dp"
+        android:layout_height="41dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="527dp"
+        android:background="#FCE4EC"
+        android:gravity="center"
+        android:text="Enter your information:"
+        android:textColor="#BF3D6D"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/weight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="64dp"
+
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="262dp"
+        android:dropDownWidth="wrap_content"
+        android:gravity="center"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="455dp"
+        android:ems="10"
+        android:hint="Name goes here"
+        android:inputType="text|textPersonName"
+        android:textColorHighlight="#BF3D6D"
+        android:textColorLink="#BF3D6D"
+        android:textCursorDrawable="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="390dp"
+        android:ems="10"
+        android:hint="Height goes here"
+        android:inputType="text|textPersonName" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="228dp"
+        android:layout_marginBottom="131dp"
+        android:fontFamily="sans-serif"
+        android:onClick="btnSaveOnClick"
+        android:shadowColor="#BF3D6D"
+        android:text="Save"
+        android:textColor="@color/pink"
+        android:textColorLink="@color/pink" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bmi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="131dp"
+        android:fontFamily="sans-serif"
+        android:onClick="btnGetBMIOnClick"
+        android:shadowColor="#BF3D6D"
+        android:text="Calculate BMI"
+        android:textColor="@color/pink"
+        android:textColorLink="@color/pink" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="270dp"
+        android:layout_marginBottom="195dp"
+        android:text="BMI : " />
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView3"
+        android:layout_alignTop="@id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="195dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="67dp"
+        android:onClick="btnTimerOnClick"
+        android:text="Timer" />
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timer">
+
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="206dp"
+        android:gravity="center"
+        android:text="Reset"
+        android:textColor="#FFBF3D6D"
+        android:textColorHighlight="#FFBF3D6D" />
+
+    <EditText
+        android:id="@+id/timerEditS"
+
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="228dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="425dp"
+        android:gravity="center"
+        android:text="00"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/timerEditM"
+
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="228dp"
+        android:layout_marginBottom="425dp"
+        android:gravity="center"
+        android:text ="00"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="205dp"
+        android:layout_height="78dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="202dp"
+        android:layout_marginBottom="442dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/timerText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="296dp"
+        android:gravity="center"
+        android:text="Start"
+        android:textColor="#FFBF3D6D"
+        android:textColorHighlight="#FFBF3D6D" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="198dp"
+        android:layout_marginRight="203dp"
+        android:layout_marginBottom="449dp"
+        android:text=":"
+        android:textSize="50sp" />
+
+
+</RelativeLayout>
